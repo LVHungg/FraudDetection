@@ -2,6 +2,8 @@ import streamlit as st
 import os
 import pandas as pd
 
+import plotly.express as px
+
 icon_path = os.path.join("icons", "frauddetection.png")
 
 st.set_page_config(
@@ -17,8 +19,8 @@ st.set_page_config(
     }
 )
 
-
 st.header('Fraud Detection Monitoring')
-df = pd.read_csv('C:\\Users\\levan\\FraudDetection\\data\\Fraud Detection Dataset.csv')
+# df = pd.read_csv('C:\\Users\\levan\\FraudDetection\\data\\Fraud Detection Dataset.csv')
 
-st.dataframe(df)
+
+# st.dataframe(df)

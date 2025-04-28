@@ -1,0 +1,26 @@
+# Requirements for Fraud Detection Project
+
+# Data manipulation and analysis
+pandas
+numpy
+
+# Machine learning
+imbalanced-learn
+scikit-learn
+xgboost
+lightgbm
+catboost
+
+# Deep learning
+tensorflow
+keras
+
+# Data visualization
+matplotlib
+seaborn
+plotly
+pandas-profiling
+
+# Miscellaneous
+joblib
+scipy
