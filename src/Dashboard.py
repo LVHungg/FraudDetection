@@ -20,7 +20,17 @@ st.set_page_config(
 )
 
 st.header('Fraud Detection Monitoring')
-# df = pd.read_csv('C:\\Users\\levan\\FraudDetection\\data\\Fraud Detection Dataset.csv')
 
+# Lấy đường dẫn thư mục hiện tại của file Dashboard.py
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# st.dataframe(df)
+# Di chuyển ra thư mục cha (ra khỏi /src) rồi vào thư mục data
+data_path = os.path.join(BASE_DIR, '..', 'data', 'Fraud Detection Dataset.csv')
+
+# Đảm bảo path đúng bằng cách chuẩn hóa lại
+data_path = os.path.normpath(data_path)
+
+# Đọc file
+df = pd.read_csv(data_path)
+
+st.dataframe(df)
